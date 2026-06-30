@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6f3ff5">
+  <title>Cos CRM</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="offlineLock" class="offline-lock"><div><b>Internet required</b><p>Cos CRM uses online libraries for PDF, Excel and charts. Reconnect and refresh.</p><button onclick="location.reload()">Retry</button></div></div>
+  <input type="file" id="landingImportFile" accept=".xlsx,.xls" class="hidden">
+  <main id="landing" class="landing">
+    <nav><div class="brand"><span>C</span>Cos CRM</div><div class="nav-actions"><button class="btn ghost" data-landing="import">Import Excel</button><button class="btn primary" data-landing="signup">Create new account</button></div></nav>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Premium CRM for retail and corporate teams</p>
+        <h1>Cos CRM</h1>
+        <p>SuiteCRM-inspired breadth with Zoho-style quotation, GST invoice, contacts, deals, email marketing and analytics in a simple hostable app.</p>
+        <div class="hero-cta">
+          <button class="btn primary" data-landing="signup">Create new account</button>
+          <button class="btn ghost" data-landing="import">Import Excel</button>
+        </div>
+        <p class="hero-note">New here? Create a fresh account. Returning? Import your saved Excel backup to pick up where you left off.</p>
+      </div>
+      <div class="hero-card">
+        <svg class="hero-illustration" viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="464" height="304" rx="20" fill="var(--bg)" stroke="var(--line)"/>
+          <circle cx="34" cy="34" r="5" fill="#ffb020"/><circle cx="52" cy="34" r="5" fill="#00a6a6"/><circle cx="70" cy="34" r="5" fill="var(--accent)"/>
+          <rect x="28" y="58" width="190" height="120" rx="14" fill="var(--panel)" stroke="var(--line)"/>
+          <circle cx="92" cy="118" r="40" fill="none" stroke="var(--line)" stroke-width="14"/>
+          <circle cx="92" cy="118" r="40" fill="none" stroke="var(--accent)" stroke-width="14" stroke-dasharray="180 252" stroke-linecap="round" transform="rotate(-90 92 118)"/>
+          <circle cx="92" cy="118" r="40" fill="none" stroke="var(--accent2)" stroke-width="14" stroke-dasharray="70 252" stroke-dashoffset="-180" stroke-linecap="round" transform="rotate(-90 92 118)"/>
+          <rect x="150" y="148" width="56" height="10" rx="5" fill="var(--line)"/>
+          <rect x="228" y="58" width="224" height="120" rx="14" fill="var(--panel)" stroke="var(--line)"/>
+          <rect x="246" y="146" width="20" height="14" rx="3" fill="var(--accent)"/>
+          <rect x="274" y="124" width="20" height="36" rx="3" fill="var(--accent2)"/>
+          <rect x="302" y="104" width="20" height="56" rx="3" fill="var(--accent)"/>
+          <rect x="330" y="86" width="20" height="74" rx="3" fill="#ffb020"/>
+          <rect x="358" y="116" width="20" height="44" rx="3" fill="var(--accent2)"/>
+          <rect x="386" y="96" width="20" height="64" rx="3" fill="var(--accent)"/>
+          <rect x="414" y="130" width="20" height="30" rx="3" fill="#ffb020"/>
+          <rect x="28" y="196" width="424" height="100" rx="14" fill="var(--panel)" stroke="var(--line)"/>
+          <circle cx="58" cy="226" r="14" fill="var(--accent)"/><rect x="80" y="219" width="120" height="8" rx="4" fill="var(--text)" opacity=".7"/><rect x="80" y="233" width="80" height="6" rx="3" fill="var(--line)"/>
+          <circle cx="58" cy="266" r="14" fill="var(--accent2)"/><rect x="80" y="259" width="140" height="8" rx="4" fill="var(--text)" opacity=".7"/><rect x="80" y="273" width="90" height="6" rx="3" fill="var(--line)"/>
+          <rect x="320" y="218" width="110" height="32" rx="16" fill="var(--accent)" opacity=".15"/><rect x="334" y="230" width="82" height="8" rx="4" fill="var(--accent)"/>
+        </svg>
+        <div class="mini"><span>Pipeline</span><b>Rs 18.6L</b></div><div class="mini"><span>Quotes</span><b>42</b></div><div class="mini"><span>Invoices</span><b>31</b></div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features-head"><p class="eyebrow">Why teams choose Cos CRM</p><h2>One workspace for sales, billing and outreach</h2></div>
+      <div class="features-grid">
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg><h3>Leads & deals</h3><p>Move leads through a kanban pipeline and track deal value at every stage.</p></div>
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h3>Companies & contacts</h3><p>Keep every buyer, company and conversation organised in one place.</p></div>
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6M9 9h1"/></svg><h3>GST quotes & invoices</h3><p>Auto-numbered quotations and invoices with tax, discounts and signed PDFs.</p></div>
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><h3>Product & stock</h3><p>See live stock levels while you bill, with a dedicated stock list view.</p></div>
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><h3>Email outreach</h3><p>Pick contacts and send campaigns straight from your own email app.</p></div>
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg><h3>Analytics</h3><p>Revenue, tax and pipeline trends visualised at a glance.</p></div>
+      </div>
+    </section>
+    <section class="cta-banner">
+      <div><h2>Get started in seconds</h2><p>No servers, no signup forms, no waiting — just create a workspace or import your saved data.</p></div>
+      <div class="hero-cta"><button class="btn primary" data-landing="signup">Create new account</button><button class="btn ghost" data-landing="import">Import Excel</button></div>
+    </section>
+    <footer class="landing-footer"><div class="brand"><span>C</span>Cos CRM</div><p>Runs entirely in your browser. Export anytime as Excel.</p></footer>
+  </main>
+  <div id="app" class="app hidden"><aside><div class="brand side"><span>C</span>Cos CRM</div><button class="nav active" data-page="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Dashboard</span></button><button class="nav" data-page="companies"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="15" y="9" width="5" height="12"/><path d="M7 7h1M11 7h1M7 11h1M11 11h1M7 15h1M11 15h1"/></svg><span>Companies</span></button><button class="nav" data-page="contacts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Contacts</span></button><button class="nav" data-page="leads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg><span>Leads</span></button><button class="nav" data-page="deals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="14 6 21 6 21 13"/></svg><span>Deals</span></button><button class="nav" data-page="products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Products</span></button><button class="nav" data-page="quotes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6M9 9h1"/></svg><span>Quotations</span></button><button class="nav" data-page="invoices"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg><span>Invoices</span></button><button class="nav" data-page="marketing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><span>Email Marketing</span></button><button class="nav" data-page="analytics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg><span>Analytics</span></button><button class="nav" data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg><span>Settings</span></button></aside><section class="main"><header><div><p class="eyebrow">Business workspace</p><h2 id="title">Dashboard</h2></div><div class="top"><button id="install" class="btn ghost">Install</button><button id="theme" class="btn ghost">Dark</button><span id="profile" class="chip"></span><button id="logout" class="btn danger">Logout</button></div></header><div id="pages"></div></section></div>
+  <div id="pdfStage"></div>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
